@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS display</title>
+<style>
+span {
+    display: block; /*  block - uno sotto l'altro; inline - uno dopo l'altro; none - non renderizza, non occupa spazio, proprio come se non ci fosse */
+}
+div.hidden {
+    visibility: hidden; /* non renderizza, ma occupa spazio */
+}
+.inline-block {
+    background-color: yellow;
+    border: solid black 10px;
+    height: 300px;
+    display: inline-block;
+}
+</style>
+</head>
+
+<body>
+    <div>Sono div, un elemento block-element, il che significa che vado a capo e prendo tutta la width disponibile.</div>
+    <span>Io invece sono uno span, un elemento inline, il che significa che non vado a capo e prendo width finche' serve.</span>
+<span>In questo esempio in CSS allo span è associato il display:block;, quindi impila gli span uno sotto l'altro.</span>
+<div class="hidden">Io sono un divisore hidden.</div>
+Qui di seguito due span con inline-block<span class="inline-block">Span1</span><span class="inline-block">Span2</span>
+Come vedi ogni fine span non manda a capo (block), e viene riportata la loro hieght, cosa che non succederebbe se fossero inline.
+<br>
+<ul class="inline-block">
+    <li>home</li><li>about us</li><li>our clients</li><li>contact us</li>
+</ul>
+</body>
+</html>

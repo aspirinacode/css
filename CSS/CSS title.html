@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS text</title>
+<style>
+div {
+    background-color:honeydew;
+    width: 30%; max-width: 70%; min-width: 20%;
+    height: 30%; max-height: 70%; min-height: 20%;
+    border-style:ridge; border-color: navajowhite; border-left:sandybrown 5px solid;
+    margin-left: 20px; margin-top: 20px;
+    outline-style: ridge; outline-width: 2px;
+    padding: 10px;
+    text-align: justify;
+    }   
+    /* fin qua, li trovi in altri file */
+    /* formattazione del testo di seguito */
+h1 {
+    color:steelblue;
+    text-align: center;
+    text-decoration: underline;      /* line-through, overline */
+    text-transform: uppercase;       /* lowercase, capitalize */
+    text-shadow: indigo 2px 1px;   /* Ombreggiatura */
+}
+p {
+    text-align: justify;
+    text-indent: 5px;           /* Prima riga del paragrafo */
+    line-height: 1.5;           /* Interlinea */
+    word-spacing: 5px;          /* Spaziatura tra le parole */
+}
+i {
+    letter-spacing: 3px;        /* Spaziatura tra le lettere */
+}
+#div1 {
+    width: 50px;
+    overflow: hidden;
+    text-overflow: clip;        /* ellipsis [...] */
+    white-space: nowrap;        /* Senza questo l'aumento di testo va a capo e allarga il div */
+}
+</style>
+</head>
+<body>
+    <div><h1>Vispa teresa</h1>
+    <p>La vispa Teresa avea tra l'erbetta, a volo sorpresa gentil <i>farfalletta</i>. E tutta giuliva stringendola viva gridava a distesa: 'L'ho presa! L'ho presa!'.
+    <br> A lei supplicando l'afflitta gridò: 'Vivendo, volando che male ti fò? Tu sì mi fai male stringendomi l'ale! Deh, lasciami! Anch'io son figlia di Di
+    <br> Teresa pentita allenta le dita: 'Va', torna all'erbetta, gentil farfalletta'. Confusa, pentita, Teresa arrossì, dischiuse le dita e quella fuggì.</p>
+    <br>
+</div>
+<div id="div1">
+Testo testo testo testo testo testo testo testo teso
+
+
+</div>
+</body>
+</html>

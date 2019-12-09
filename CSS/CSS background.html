@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS background</title>
+<style>
+    body {
+        /* background-color: lightblue; colore solido*/
+        background-image: url("../immagini/bici1.jpg");
+        background-repeat: no-repeat;
+        /*  background-repeat: repeat-x; ripeti solo orizzontalmente
+            background-repeat: repeat-y; ripeti solo verticalmente */
+        background-position: right, top;
+        background-attachment: scroll; /* fixed */
+
+        /* alternativamente:
+        background: url('url.jpg') no-repeat right top;
+        */
+
+    }
+    div {
+        top: 30px;
+        right: 30px;
+        width: 1200px;
+        height: 400px;
+        background-image: url("../immagini/pup1.jpg");
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: black;
+}
+.press {
+    background-color: greenyellow;
+    color: white; text-align: center; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    border: solid whitesmoke 5px;
+    text-transform: uppercase;
+}
+#show {
+    display: none;
+}
+#show2 {
+    background-color: ivory;
+}
+</style>
+</head>
+<body>
+<p class="press" onmousedown="mostra()" onmouseup="nascondi()">Tieni premuto</p>
+<p class="press" onclick="mostra2()">Cliccami</p>
+<div id="show" class="press">Temporaneo</div>
+<div id="show2" class="press">Rimango</div>
+<script>
+function mostra() {
+    document.getElementById("show").style.display = "block";
+}
+function nascondi() {
+    document.getElementById("show").style.display = "none";
+}
+function mostra2() {
+    var x = document.getElementById("show2");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+    } else {
+        x.style.visibility = "hidden";
+    }
+}
+
+</script>
+</body>
+</html>

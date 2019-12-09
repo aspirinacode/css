@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS generals</title>
+<style>
+body {
+    background-color:black;
+}
+/* volendo puoi accodare: h1, p, class {} */
+h1 {                            /*element selector - agisce su elementi come h1, p, b */
+    color:darkgreen;
+    text-align: center;
+}
+p {
+    color:darkolivegreen;
+    text-align: justify;
+    font-family: Verdana, sans-serif; /*se non trova verdana usa san-serif */
+    font-size: 20px;
+}
+#id1 {                          /* id selector */
+    color:darkseagreen;
+    font-family: sans-serif;
+}
+.right {                         /* class selector */
+    text-align: right;
+    color: maroon;
+}
+p.right {                        /* element.class selector */
+    font-family: 'Courier New';
+    color:tomato;
+}
+.impo {
+    font-size: 10px;
+}
+/*  Per external CSS: <link rel="stylesheet" type="text/css" href="mystyle.css">
+    nota: dato che la lettura avviene top-bottom, nel caso in cui usi anche internal CSS, è meglio usare il tag
+    come ultimissima cosa nell'head, in modo da dargli priorità assoluta.
+    
+    L'ordine a cascata, dal più debole al più forte:
+    1. Default del browser
+    2. Internal CSS
+    3. External CSS
+    4. Inline CSS
+*/
+</style>
+</head>
+<body>
+<h1>TITOLO</h1>
+<p>Paragrafo</p>
+<p id="id1">Identità 1</p>
+<h3 class="right">Titolo a dx</h3>
+<p class="right">Corpo a dx</p>
+<p class="right impo">Informazione sul prezzo</p>
+</body>
+</html>

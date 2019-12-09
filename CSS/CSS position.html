@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><title>CSS position</title>
+<style>
+    body {
+        background-color:lightskyblue;
+    }
+    h1 {
+        color:darkslategray;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        text-decoration: underline;
+    }
+    div {
+        margin: 20px;
+        display: block;
+        padding: 10px;
+        border: solid 3px cornflowerblue;
+        left: 30px;
+        background-color: lightcyan;
+    }
+    #one {
+        left: 30px;
+        width: 300px;
+    }
+    #two {
+        position: relative;
+        right: 0;
+        width: 200px;
+        height: 150px;
+    }
+    #three {
+        position: fixed;
+    }
+    #four {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        top: 30px;
+        left: 300px;
+    }
+    #four_one {
+        position: absolute;
+        right: 0;
+    }
+    img {
+        position: fixed;
+        top: 0px;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .container {
+        position: relative;
+    }
+    .center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+    <h1>Titolo</h1>
+<div id="one">Static - ho un left di 30px ma essendo statico non influisce su di me. Inoltre se provi a fare scroll io rimango qui. </div>
+<div id="two">Relative - su di me il left ha effetto.</div>
+<div id="three">Fixed - su di me il left ha effetto.</div>
+<div id="four">
+    <div id="four_one">Absolute - prendo il punto di riferimento dal div nel quale sono.</div>
+</div>
+<div class="container">
+<img src="../immagini/bici1.jpg" width="1000px" height="800px">
+<div class="center">Testo al centro</div>
+</div>
+<p>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>
+a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>
+a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>
+a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br>a capo<br></p>
+
+</body>
+</html>

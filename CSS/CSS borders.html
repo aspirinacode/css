@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS borders</title>
+<style>
+    /* border-style */
+    p.dotted {border-style: dotted;}
+    p.dashed {border-style: dashed;}
+    p.solid {border-style: solid;}
+    p.double {border-style: double;}
+    p.groove {border-style: groove;}
+    p.ridge {border-style: ridge;}
+    p.inset {border-style: inset;}
+    p.outset {border-style: outset;}
+    p.none {border-style: none;}
+    p.hidden {border-style: hidden;}
+    p.mix {border-style: dotted dashed solid double;} /* top>right>bottom>left */
+
+    /* border-width */
+    p.one {
+        border-style: solid;
+        border-width: medium; /* thin, thick, 10px, */
+        }
+    p.two {
+        border-style: groove;
+        border-width: 2px 5px 10px 15px;
+    }
+    /* border-color */
+    p.three {
+        border-style: dashed;
+        border-color: red;
+    }
+    p.four {
+        border-style:inset;
+        border-width: 10px;
+        border-color: black red green blue; /* top>right>bottom>left */
+    }
+    p.cool {
+        background-color:cadetblue;
+        border-left:dodgerblue solid 6px;
+    }
+    /* Rounded borders */
+    p.round {
+    border: 17px groove red ;
+    border-radius: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <h3>Border-style</h3>
+    <p class="dotted">Tratteggiato</p>
+    <p class="dashed">Trattineggiato</p>
+    <p class="solid">Solido</p>
+    <p class="double">Doppio</p>
+    <p class="groove">Scanalato, colore dipendente</p>
+    <p class="ridge">Crestante, colore dipendente</p>
+    <p class="inset">Premuto, colore dipendente</p>
+    <p class="outset">Fuoriuscente, colore dipendente</p>
+    <p class="none">Nullo</p>
+    <p class="hidden">Nascosto</p>
+    <p class="mix">Misto</p>
+    <h3>Border Width</h3>
+    <p class="one">Stesso spessore</p>
+    <p class="two">Spessori misti</p>
+    <h3>Border Color</h3>
+    <p class="three">Stesso colore</p>
+    <p class="four">Colori misti</p>
+    <p class="cool">Testo fico</p>
+    <h3>Rounder borderd</h3>
+    <p class="round">Bordo arrotondato</p>
+</body>
+</html>
